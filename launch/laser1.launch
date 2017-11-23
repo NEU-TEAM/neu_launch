@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<launch>
+  <node pkg="hokuyo_node" type="hokuyo_node" name="hokuyo_node" output="screen">
+    <param name="port" value="/dev/ttyACM0"/>
+    <!--param name="max_ang" value="2.3235"/-->
+  <param name="max_ang" value="2.0"/>
+    <!--param name="min_ang" value="-2.32214"/-->
+<param name="min_ang" value="-2.0"/>
+  </node>
+ <node ns="tf_footprint_to_laser" pkg="tf" type="static_transform_publisher" name="base_f" args="0.25 0.0 -0.9 0 0 0 base_link laser 100" />
+ <node pkg="tf" type="static_transform_publisher" name="odom_map_broadcaster" args="0 0 0 0 0 0 /map /odom 100" />
+ <!--node pkg="tf" type="static_transform_publisher" name="nav_base1" args="0 0 0 0 0 0 odom base_link 100" /-->
+  <!--node pkg="tf" type="static_transform_publisher" name="base_link1" args="0 0 0 0 00 0 map odom 100" /-->
+  <!--node pkg="tf" type="static_transform_publisher" name="base_footprint1" args="0 0 0 0 0 0 map odom_raw 100" /-->
+</launch>

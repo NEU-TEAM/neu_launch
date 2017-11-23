@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+  <param name="/use_sim_time" value="true"/>
+  <!--include file="$(find neu_launch)/launch/freenect-registered-xyzrgb.launch" /-->
+  <include file="$(find neu_launch)/launch/depthimage_to_laserscan.launch" />
+  <!--node name="odom_tf_package" pkg="odom_tf_package" type="odom_tf_package" /-->
+
+
+</launch>

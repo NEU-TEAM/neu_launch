@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+
+<launch>
+  <node pkg="neu_control" type="control" name="control">
+  </node>
+</launch>

@@ -1,0 +1,22 @@
+<package>
+<name>neu_launch</name>
+<version>0.3.4</version>  
+  <description>
+
+     neu_launch
+
+  </description>
+  <author>Administrator</author>
+  <maintainer email="850876907@qq.com">liping dong</maintainer>
+  <license>BSD</license>
+  <url>http://ros.org/wiki/neu_arduino</url>
+  <buildtool_depend>catkin</buildtool_depend>
+</package>
+  
+
+
+
+
+
+
+

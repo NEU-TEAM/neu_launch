@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<launch>
+  <node pkg="hokuyo_node" type="hokuyo_node" name="hokuyo_node" output="screen">
+    <param name="port" value="/dev/urg_laser"/>
+
+    <!-- laser range -90~90 degree -->
+    <param name="max_ang" value="1.5"/>
+    <param name="min_ang" value="-1.5"/>
+  </node>
+
+  <node ns="tf_footprint_to_laser" pkg="tf" type="static_transform_publisher" name="base_f" args="0.25 0 0.09 0 0 0 base_footprint laser 100" />
+</launch>

@@ -1,0 +1,18 @@
+obstacle_range: 4
+max_obstacle_height: 2.5
+raytrace_range: 5
+
+#The footprint of the robot and associated padding
+footprint: [[0.28, 0.28], [-0.28, 0.28],[-0.28, -0.28], [0.28, -0.28]]
+#robot_radius: 0.50
+footprint_padding: 0.05
+#Cost function parameters
+inflation_radius: 0.15
+cost_scaling_factor: 10.0
+
+#The cost at which a cell is considered an obstacle when a map is read from the map_server
+lethal_cost_threshold: 100
+
+#Configuration for the sensors that the costmap will use to update a map
+observation_sources: laser_scan_sensor
+laser_scan_sensor: {sensor_frame: laser, data_type: LaserScan, topic: scan, expected_update_rate: 1.0, observation_persistence: 0.0, marking: true, clearing: true, max_obstacle_height: 2.5, min_obstacle_height: 0.0}

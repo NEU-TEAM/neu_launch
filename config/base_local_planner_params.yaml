@@ -1,0 +1,30 @@
+#For full documentation of the parameters in this file, and a list of all the
+#parameters available for TrajectoryPlannerROS, please see
+#http://www.ros.org/wiki/base_local_planner
+TrajectoryPlannerROS:
+  xy_goal_tolerance: 0.1
+  yaw_goal_tolerance: 0.1
+  acc_lim_x: 1.0 
+  acc_lim_y: 0.0 
+  acc_lim_theta: 3.2
+  #We'll configure how long and with what granularity we'll forward simulate trajectories
+  sim_time: 2.5
+  sim_granularity: 0.05
+  vx_samples: 3
+  vtheta_samples: 20
+  dwa: true
+  controller_frequency: 1.0
+  max_vel_x: 0.4
+  min_vel_x: 0.08
+  max_rotation_vel: 0.8
+  max_vel_theta: 0.8
+  min_vel_theta: -0.8
+  min_in_place_vel_theta: 0.1
+  escape_vel: -0.1
+  holonomic_robot: false
+  pdist_scale: 1.2
+  gdist_scale: 1.2
+  occdist_scale: 0.15
+  meter_scoring: true
+ 
+
