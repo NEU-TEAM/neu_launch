@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-<launch>
-
-  <!--include file="$(find astra_launch)/launch/astra.launch" /-->
-  <include file="$(find neu_launch)/launch/depthimage_to_laserscan.launch" />
-  <node name="odom_tf_package" pkg="odom_tf_package" type="odom_tf_package" />
-
-
-</launch>
