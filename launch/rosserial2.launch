@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+  
+  <node ns="arduino_jiaodu" name="hj_arduino_jiaodu" pkg="rosserial_python" type="serial_node.py"  >
+    <param name="port" value="/dev/Arduino_base"/>
+  </node>
+</launch>
+
+
