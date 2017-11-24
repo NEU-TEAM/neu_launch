@@ -11,9 +11,9 @@
   <include file="$(find neu_launch)/launch/amcl_diff.launch" />
   <include file="$(find neu_launch)/launch/move_base_hj.launch" />
 
-  <node name="odom_tf_package" pkg="odom_tf_package" type="odom_tf_package" />
+  <!-- Publish odom based on imu and wheel speed -->
+  <node name="odom_tf" pkg="odom_tf_package" type="odom_tf" />
 
-  <!--node name="map_server" pkg="map_server" type="map_server" args="$(find neu_launch)/map/blank_map.yaml"/-->
   <node name="map_server" pkg="map_server" type="map_server" args="$(find neu_launch)/map/map1122.yaml"/>
 
   <!-- Subscribe location from voice command -->
