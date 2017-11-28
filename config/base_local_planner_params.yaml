@@ -1,8 +1,9 @@
-#For full documentation of the parameters in this file, and a list of all the
-#parameters available for TrajectoryPlannerROS, please see
-#http://www.ros.org/wiki/base_local_planner
+# For full documentation of the parameters in this file, and a list of all the
+# parameters available for TrajectoryPlannerROS, please see
+# http://www.ros.org/wiki/base_local_planner
+# length in m, angle in radius
 TrajectoryPlannerROS:
-  xy_goal_tolerance: 0.1
+  xy_goal_tolerance: 0.15
   yaw_goal_tolerance: 0.1
   acc_lim_x: 1.0 
   acc_lim_y: 0.0 
