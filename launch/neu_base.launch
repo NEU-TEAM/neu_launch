@@ -9,7 +9,7 @@
   </include>
   
   <include file="$(find neu_launch)/launch/amcl_diff.launch" />
-  <include file="$(find neu_launch)/launch/move_base_hj.launch" />
+  <include file="$(find neu_launch)/launch/move_base.launch" />
 
   <!-- Publish odom based on imu and wheel speed -->
   <node name="odom_tf" pkg="odom_tf_package" type="odom_tf" />
